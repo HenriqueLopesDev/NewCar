@@ -73,6 +73,7 @@ export const CopyrightMessage = styled.div`
 
   h3 {
     padding: 1.5rem 0;
+    margin-bottom: 0;
     text-align: center;
     font-size: 0.875rem;
     color: ${(props) => props.theme['gray-100']};

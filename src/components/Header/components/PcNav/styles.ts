@@ -9,6 +9,7 @@ export const NavBar = styled.nav`
 export const UlList = styled.ul`
   display: flex;
   list-style: none;
+  margin-bottom: 0;
   gap: 1rem;
 `
 
