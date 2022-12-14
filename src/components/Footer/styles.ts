@@ -6,14 +6,36 @@ export const FooterApp = styled.footer`
 
 export const FooterMainContent = styled.div`
   display: flex;
+  flex-wrap: wrap;
   padding: 2rem 10rem;
   justify-content: space-between;
-  gap: 20rem;
 
   p {
     color: ${(props) => props.theme['gray-100']};
+    width: 30rem;
     font-weight: 500;
     line-height: 1.3;
+  }
+
+  @media (max-width: 1390px) {
+    padding: 2rem 5rem;
+    p {
+      width: 25rem;
+    }
+  }
+
+  @media (max-width: 1020px) {
+    p {
+      width: 20rem;
+    }
+  }
+
+  @media (max-width: 800px) {
+    gap: 2rem;
+  }
+
+  @media (max-width: 805px) {
+    padding: 2rem 2.5rem;
   }
 `
 export const SocialMediasIconsContainer = styled.div`
@@ -21,6 +43,14 @@ export const SocialMediasIconsContainer = styled.div`
   justify-content: left;
   padding: 0 10rem;
   gap: 1rem;
+
+  @media (max-width: 1390px) {
+    padding: 0 5rem;
+  }
+
+  @media (max-width: 805px) {
+    padding: 0 2.5rem;
+  }
 `
 
 export const IconStyle = styled.a`
@@ -38,7 +68,7 @@ export const IconStyle = styled.a`
 `
 
 export const CopyrightMessage = styled.div`
-  border: 2.5px solid ${(props) => props.theme['blue-800']};
+  border-top: 2.5px solid ${(props) => props.theme['blue-800']};
   margin-top: 2rem;
 
   h3 {

@@ -1,29 +1,38 @@
-import { HeaderMain, IlList, UlList } from './styles'
+import {
+  HeaderMain,
+  HeaderMainMenu,
+  StyledClose,
+  StyledHamburguer,
+} from './styles'
 import newGologo from '../../assets/newGologo.svg'
+import { PcNav } from './components/PcNav'
+import { MobileNav } from './components/MobileNav'
+import { useState } from 'react'
 
 export function Header() {
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
-    <HeaderMain>
-      <img src={newGologo} alt="Logo da NewGo" />
-      <nav>
-        <UlList>
-          <IlList>
-            <a href="/">Home</a>
-          </IlList>
-          <IlList>
-            <a href="/">Carros</a>
-          </IlList>
-          <IlList>
-            <a href="/">Quem somos</a>
-          </IlList>
-          <IlList>
-            <a href="/">Contatos</a>
-          </IlList>
-          <IlList>
-            <a href="/">Parceiros</a>
-          </IlList>
-        </UlList>
-      </nav>
+    <HeaderMain isOpen={isMobileMenuOpen}>
+      <HeaderMainMenu>
+        <img src={newGologo} alt="Logo da NewGo" />
+        <PcNav />
+        {!isMobileMenuOpen ? (
+          <StyledHamburguer
+            onClick={() => setMobileMenuOpen(true)}
+            size={24}
+            color="#272221"
+            weight="bold"
+          />
+        ) : (
+          <StyledClose
+            onClick={() => setMobileMenuOpen(false)}
+            size={24}
+            color="#272221"
+            weight="bold"
+          />
+        )}
+      </HeaderMainMenu>
+      <MobileNav />
     </HeaderMain>
   )
 }
