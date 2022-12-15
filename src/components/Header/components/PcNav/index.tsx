@@ -1,11 +1,12 @@
 import { IlList, NavBar, UlList } from './styles'
+import { NavLink } from 'react-router-dom'
 
 export function PcNav() {
   return (
     <NavBar>
       <UlList>
         <IlList>
-          <a href="/">Home</a>
+          <NavLink to="/">Home</NavLink>
         </IlList>
         <IlList>
           <a href="/">Carros</a>
@@ -14,7 +15,7 @@ export function PcNav() {
           <a href="/">Quem somos</a>
         </IlList>
         <IlList>
-          <a href="/">Contatos</a>
+          <NavLink to="/contatos">Contatos</NavLink>
         </IlList>
         <IlList>
           <a href="/">Parceiros</a>
