@@ -17,6 +17,7 @@ import Carousel from 'react-bootstrap/Carousel'
 
 export function Home() {
   //   console.log(window.innerWidth) Fazer a responsivdade do carrossel
+  document.title = 'NewGo | Sua concessionária favorita'
   return (
     <HomeContainer>
       <WelcomeSection>
