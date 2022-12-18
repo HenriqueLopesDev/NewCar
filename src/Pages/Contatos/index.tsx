@@ -29,7 +29,6 @@ export function Contatos() {
   document.title = 'NewGo | Contatos'
 
   function EnviarMensagem(event: any) {
-    debugger
     event.preventDefault()
     event.target.name.value = ''
     event.target.telefone.value = ''

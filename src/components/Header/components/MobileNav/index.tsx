@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import {
   MobileNavBar,
   MobileUl,
@@ -11,19 +12,19 @@ export function MobileNav() {
       <MobileNavBar></MobileNavBar>
       <MobileUl>
         <MobileNavLi>
-          <a href="/">Home</a>
+          <NavLink to="/">Home</NavLink>
         </MobileNavLi>
         <MobileNavLi>
-          <a href="/">Carros</a>
+          <NavLink to="/">Carros</NavLink>
         </MobileNavLi>
         <MobileNavLi>
-          <a href="/">Quem somos</a>
+          <NavLink to="/sobrenos">Quem somos</NavLink>
         </MobileNavLi>
         <MobileNavLi>
-          <a href="/">Contatos</a>
+          <NavLink to="/contatos">Contatos</NavLink>
         </MobileNavLi>
         <MobileNavLi>
-          <a href="/">Parceiros</a>
+          <NavLink to="/">Parceiros</NavLink>
         </MobileNavLi>
       </MobileUl>
     </MobileMenuContainer>

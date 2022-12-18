@@ -9,16 +9,16 @@ export function PcNav() {
           <NavLink to="/">Home</NavLink>
         </IlList>
         <IlList>
-          <a href="/">Carros</a>
+          <NavLink to="/">Carros</NavLink>
         </IlList>
         <IlList>
-          <a href="/">Quem somos</a>
+          <NavLink to="/sobrenos">Quem somos</NavLink>
         </IlList>
         <IlList>
           <NavLink to="/contatos">Contatos</NavLink>
         </IlList>
         <IlList>
-          <a href="/">Parceiros</a>
+          <NavLink to="/">Parceiros</NavLink>
         </IlList>
       </UlList>
     </NavBar>
