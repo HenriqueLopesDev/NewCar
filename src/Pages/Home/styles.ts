@@ -16,6 +16,55 @@ export const WelcomeSection = styled.section`
     width: 28rem;
     height: 20rem;
   }
+
+  @media (max-width: 1390px) {
+    padding: 2rem 5rem;
+  }
+
+  @media (max-width: 1270px) {
+    gap: 8rem;
+  }
+
+  @media (max-width: 1190px) {
+    gap: 5rem;
+  }
+
+  @media (max-width: 1150px) {
+    img {
+      width: 23rem;
+      height: 15rem;
+    }
+  }
+
+  @media (max-width: 1030px) {
+    gap: 2rem;
+  }
+
+  @media (max-width: 985px) {
+    img {
+      width: 18rem;
+      height: 10rem;
+    }
+  }
+
+  @media (max-width: 805px) {
+    padding: 2rem 2.5rem;
+  }
+
+  @media (max-width: 630px) {
+    flex-wrap: wrap;
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 390px) {
+    img {
+      width: 15rem;
+      height: 7rem;
+    }
+  }
 `
 
 export const WelcomeMessage = styled.div`
@@ -29,11 +78,29 @@ export const WelcomeMessage = styled.div`
     font-size: 2rem;
     color: ${(props) => props.theme.white};
   }
+
+  @media (max-width: 985px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 330px) {
+    h1 {
+      font-size: 1.125rem;
+    }
+  }
 `
 
 export const ItensDiv = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 500px) {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
 `
 
 export const ItensIconDiv = styled.div`
@@ -47,6 +114,12 @@ export const ItensIconDiv = styled.div`
     font-size: 1rem;
     font-weight: 400;
     color: ${(props) => props.theme.white};
+  }
+
+  @media (max-width: 330px) {
+    p {
+      font-size: 0.875rem;
+    }
   }
 `
 
@@ -65,6 +138,22 @@ export const CarouselSection = styled.section`
   /* background-color: #0066ff; */
   background-image: url(${circles});
   padding: 3rem 15rem;
+
+  @media (max-width: 1090px) {
+    padding: 3rem 10rem;
+  }
+
+  @media (max-width: 900px) {
+    padding: 3rem 5rem;
+  }
+
+  @media (max-width: 450px) {
+    padding: 3rem 2.5rem;
+  }
+
+  @media (max-width: 335px) {
+    padding: 3rem 1rem;
+  }
 `
 
 export const SectionTitle = styled.div`
@@ -80,6 +169,12 @@ export const SectionTitle = styled.div`
     font-weight: 500;
     text-align: center;
     color: ${(props) => props.theme.white};
+  }
+
+  @media (max-width: 510px) {
+    h2 {
+      font-size: 1.125rem;
+    }
   }
 `
 
@@ -104,6 +199,20 @@ export const PartnersContainer = styled.div`
     background-color: ${(props) => props.theme['blue-200']};
     width: 5rem;
     height: 4px;
+  }
+
+  @media (max-width: 1390px) {
+    padding: 3rem 5rem;
+  }
+
+  @media (max-width: 805px) {
+    padding: 3rem 2.5rem;
+  }
+
+  @media (max-width: 330px) {
+    h2 {
+      font-size: 1.5rem;
+    }
   }
 `
 
@@ -175,6 +284,38 @@ export const ProductsSection = styled.section`
 
     &:hover {
       background: rgb(0, 0, 0, 0.45);
+    }
+  }
+
+  @media (max-width: 1390px) {
+    padding: 4rem 5rem;
+  }
+
+  @media (max-width: 805px) {
+    padding: 4rem 2.5rem;
+  }
+
+  @media (max-width: 710px) {
+    p {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    a {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 350px) {
+    h1 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    p,
+    a {
+      font-size: 1rem;
     }
   }
 `

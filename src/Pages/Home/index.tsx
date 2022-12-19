@@ -29,13 +29,28 @@ import appCargoLogo from '../../assets/appCargoLogo.svg'
 import guararemaLogo from '../../assets/guararemaLogo.svg'
 
 export function Home() {
-  //   console.log(window.innerWidth) Fazer a responsivdade do carrossel
+  console.log(window.innerWidth)
+
+  function ImgHeight() {
+    if (window.innerWidth <= 530) {
+      return 150
+    }
+    if (window.innerWidth <= 750) {
+      return 300
+    }
+    if (window.innerWidth <= 1150) {
+      return 400
+    }
+
+    return 500
+  }
+
   document.title = 'NewGo | Sua concessionária favorita'
   return (
     <HomeContainer>
       <WelcomeSection>
         <WelcomeMessage>
-          <h1>Seu próximo automóvel dos sonhos está aqui com a gente</h1>
+          <h1>Seu automóvel dos sonhos está aqui com a gente</h1>
           <ItensDiv>
             <ItensIconDiv>
               <StyledCoin>
@@ -59,42 +74,48 @@ export function Home() {
           <CaretDown size={24} color="#FFFFFF" weight="bold" />
         </SectionTitle>
         <CarouselContainer>
-          <Carousel fade>
+          <Carousel fade wrap={true}>
             <Carousel.Item interval={3000}>
               <img
-                height={500}
+                height={ImgHeight()}
                 className="d-block w-100"
                 src="https://quatrorodas.abril.com.br/wp-content/uploads/2021/05/VW-Taos_11-e1622125254902.jpg?quality=70&strip=info"
                 alt="Image One"
               />
-              <Carousel.Caption>
-                <h3>Volkswagen Taos 2022</h3>
-                <p>Teste</p>
-              </Carousel.Caption>
+              {window.innerWidth > 530 ? (
+                <Carousel.Caption>
+                  <h3>Volkswagen Taos 2022</h3>
+                  <p>Teste</p>
+                </Carousel.Caption>
+              ) : null}
             </Carousel.Item>
             <Carousel.Item interval={3000}>
               <img
-                height={500}
+                height={ImgHeight()}
                 className="d-block w-100"
                 src="https://www.autoo.com.br/fotos/2022/4/1280_960/Hyundai1_13042022_71190_1280_960.jpg"
                 alt="Image Two"
               />
-              <Carousel.Caption>
-                <h3>Teste</h3>
-                <p>Teste</p>
-              </Carousel.Caption>
+              {window.innerWidth > 530 ? (
+                <Carousel.Caption>
+                  <h3>Teste</h3>
+                  <p>Teste</p>
+                </Carousel.Caption>
+              ) : null}
             </Carousel.Item>
             <Carousel.Item interval={3000}>
               <img
-                height={500}
+                height={ImgHeight()}
                 className="d-block w-100"
                 src="https://www.autodashboard.com.br/wp-content/uploads/2019/09/honda-civic-2020.jpg"
                 alt="Image Two"
               />
-              <Carousel.Caption>
-                <h3>Honda Civic 2020</h3>
-                <p>Teste</p>
-              </Carousel.Caption>
+              {window.innerWidth > 530 ? (
+                <Carousel.Caption>
+                  <h3>Honda Civic 2020</h3>
+                  <p>Teste</p>
+                </Carousel.Caption>
+              ) : null}
             </Carousel.Item>
           </Carousel>
         </CarouselContainer>
@@ -103,17 +124,44 @@ export function Home() {
         <h2>Nossos parceiros</h2>
         <hr></hr>
         <PartnersSection>
-          <img src={GolLogo} alt="Logo da Gol" />
-          <img src={SmilesLogo} alt="Logo da Gol" />
-          <img src={pagolLogo} alt="Logo da Gol" />
-          <img src={alticeLabsLogo} alt="Logo da Gol" />
-          <img src={vivoLogo} alt="Logo da Gol" />
-          <img src={oiLogo} alt="Logo da Gol" />
-          <img src={fibrasilLogo} alt="Logo da Gol" />
-          <img src={presentLogo} alt="Logo da Gol" />
-          <img src={omniLogo} alt="Logo da Gol" />
-          <img src={appCargoLogo} alt="Logo da Gol" />
-          <img src={guararemaLogo} alt="Logo da Gol" />
+          <img
+            src={GolLogo}
+            alt="Logo da Gol Linhas Aéreas - o texto Gol linhas aéreas inteligentes"
+          />
+          <img
+            src={SmilesLogo}
+            alt="Logo da Smiles - o texto Smiles com um sorriso abaixo"
+          />
+          <img src={pagolLogo} alt="Logo da PaGol - o texto PaGol" />
+          <img
+            src={alticeLabsLogo}
+            alt="Logo da Altice Labs - o texto Altice Labs com uma letra a estilizada à esquerda"
+          />
+          <img
+            src={vivoLogo}
+            alt="Logo da Vivo - o texto Vivo e o desenho de um bonequinho à direita"
+          />
+          <img src={oiLogo} alt="Logo da Oi - o texto Oi" />
+          <img
+            src={fibrasilLogo}
+            alt="Logo da FiBrasil - o texto FiBrasil com um desenho de fibras óticas à esquerda"
+          />
+          <img
+            src={presentLogo}
+            alt="Logo da Present Technologies - o texto Present"
+          />
+          <img
+            src={omniLogo}
+            alt="Logo da Omni - o texto Omni banco e financeira"
+          />
+          <img
+            src={appCargoLogo}
+            alt="Logo do AppCargo - o texto AppCargo com o desenho de um aplicativo e caminhão"
+          />
+          <img
+            src={guararemaLogo}
+            alt="Logo da Prefeitura de Guararema - o texto Prefeitura de Guararema"
+          />
         </PartnersSection>
       </PartnersContainer>
       <ProductsSection>
