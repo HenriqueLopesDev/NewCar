@@ -21,12 +21,47 @@ export const ContactsMainSection = styled.section`
     text-align: center;
     width: 35rem;
   }
+
+  @media (max-width: 1390px) {
+    padding: 3rem 5rem;
+  }
+
+  @media (max-width: 730px) {
+    h1 {
+      font-size: 1.75rem;
+      margin: 0 auto;
+      width: auto;
+    }
+  }
+
+  @media (max-width: 805px) {
+    padding: 3rem 2.5rem;
+  }
 `
 
 export const ContactsOptionsSection = styled.section`
   padding: 3rem 10rem;
   display: flex;
   align-items: center;
+
+  @media (max-width: 1390px) {
+    padding: 3rem 5rem;
+  }
+
+  @media (max-width: 1200px) {
+    justify-content: space-between;
+  }
+
+  @media (max-width: 805px) {
+    padding: 3rem 2.5rem;
+    gap: 1rem;
+  }
+
+  @media (max-width: 690px) {
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
 `
 
 export const LeftSide = styled.div`
@@ -34,6 +69,10 @@ export const LeftSide = styled.div`
   flex-direction: column;
   align-items: center;
   width: 50%;
+
+  @media (max-width: 1200px) {
+    width: auto;
+  }
 `
 
 export const IconContainer = styled.div`
@@ -73,6 +112,18 @@ export const SocialMediaIcons = styled.div`
 
 export const RightSide = styled.div`
   width: 50%;
+
+  @media (max-width: 1160px) {
+    width: 30rem;
+  }
+
+  @media (max-width: 900px) {
+    width: 25rem;
+  }
+
+  @media (max-width: 900px) {
+    width: 25rem;
+  }
 `
 
 export const RightSideContainer = styled.div`
@@ -80,6 +131,10 @@ export const RightSideContainer = styled.div`
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
+
+  @media (max-width: 420px) {
+    padding: 3rem 1rem;
+  }
 `
 
 export const FormTitle = styled.h2`
@@ -97,6 +152,10 @@ export const FormContent = styled.form`
   align-items: center;
   gap: 2rem;
   margin-top: 3rem;
+
+  @media (max-width: 420px) {
+    margin-top: 1.5rem;
+  }
 `
 
 export const StyledInput = styled.input`
@@ -131,5 +190,13 @@ export const FormStyledButton = styled.button`
 
   &:hover {
     background-color: #004161;
+  }
+
+  @media (max-width: 420px) {
+    margin-top: 0.5rem;
+  }
+
+  @media (max-width: 350px) {
+    width: 60%;
   }
 `
