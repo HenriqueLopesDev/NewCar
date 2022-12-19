@@ -45,15 +45,15 @@ export function Footer() {
         >
           <LinkedinLogo size={18} color="#dedede" weight="fill" />
         </IconStyle>
-        <IconStyle href="mailto:contato@newgo.com.br" target="_blank">
+        <IconStyle href="mailto:contato@newgo.com.br">
           <Envelope size={18} color="#dedede" weight="fill" />
         </IconStyle>
-        <IconStyle href="tel:+5511932989996" target="_blank">
+        <IconStyle href="tel:+5511932989996">
           <Phone size={18} color="#dedede" weight="fill" />
         </IconStyle>
       </SocialMediasIconsContainer>
       <CopyrightMessage>
-        <h3>2022© NewGo Tecnologia. Todos os direitos reservados.</h3>
+        <p>2022© NewGo Tecnologia. Todos os direitos reservados.</p>
       </CopyrightMessage>
     </FooterApp>
   )

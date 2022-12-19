@@ -71,7 +71,7 @@ export const CopyrightMessage = styled.div`
   border-top: 2.5px solid ${(props) => props.theme['blue-800']};
   margin-top: 2rem;
 
-  h3 {
+  p {
     padding: 1.5rem 0;
     margin-bottom: 0;
     text-align: center;
