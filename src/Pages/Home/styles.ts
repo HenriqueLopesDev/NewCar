@@ -11,6 +11,11 @@ export const WelcomeSection = styled.section`
   gap: 10rem;
   padding: 2rem 10rem;
   background-image: url(${wave});
+
+  img {
+    width: 28rem;
+    height: 20rem;
+  }
 `
 
 export const WelcomeMessage = styled.div`
@@ -82,6 +87,40 @@ export const CarouselContainer = styled.div`
   border: 3px solid white;
   border-radius: 4px;
   box-shadow: 10px 10px 10px rgb(0 0 0/ 0.4);
+`
+
+export const PartnersContainer = styled.div`
+  padding: 3rem 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
+  }
+
+  hr {
+    background-color: ${(props) => props.theme['blue-200']};
+    width: 5rem;
+    height: 4px;
+  }
+`
+
+export const PartnersSection = styled.section`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  img {
+    width: 10rem;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 `
 
 export const ProductsSection = styled.section`

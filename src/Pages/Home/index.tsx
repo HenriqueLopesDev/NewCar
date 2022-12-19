@@ -4,6 +4,8 @@ import {
   HomeContainer,
   ItensDiv,
   ItensIconDiv,
+  PartnersContainer,
+  PartnersSection,
   ProductsSection,
   SectionTitle,
   StyledCoin,
@@ -14,6 +16,17 @@ import car from '../../assets/car.svg'
 import { CaretDown, Coins, Wallet } from 'phosphor-react'
 import 'bootstrap/dist/css/bootstrap.css'
 import Carousel from 'react-bootstrap/Carousel'
+import GolLogo from '../../assets/golLogo.svg'
+import SmilesLogo from '../../assets/smilesLogo.svg'
+import pagolLogo from '../../assets/pagolLogo.svg'
+import alticeLabsLogo from '../../assets/alticeLabsLogo.svg'
+import vivoLogo from '../../assets/vivoLogo.svg'
+import oiLogo from '../../assets/oiLogo.svg'
+import fibrasilLogo from '../../assets/fibrasilLogo.svg'
+import presentLogo from '../../assets/presentLogo.svg'
+import omniLogo from '../../assets/omniLogo.svg'
+import appCargoLogo from '../../assets/appCargoLogo.svg'
+import guararemaLogo from '../../assets/guararemaLogo.svg'
 
 export function Home() {
   //   console.log(window.innerWidth) Fazer a responsivdade do carrossel
@@ -42,7 +55,7 @@ export function Home() {
       </WelcomeSection>
       <CarouselSection>
         <SectionTitle>
-          <h2>Conheça nossos produtos em destaque</h2>
+          <h2>Produtos em destaque</h2>
           <CaretDown size={24} color="#FFFFFF" weight="bold" />
         </SectionTitle>
         <CarouselContainer>
@@ -86,6 +99,23 @@ export function Home() {
           </Carousel>
         </CarouselContainer>
       </CarouselSection>
+      <PartnersContainer id="parceiros">
+        <h2>Nossos parceiros</h2>
+        <hr></hr>
+        <PartnersSection>
+          <img src={GolLogo} alt="Logo da Gol" />
+          <img src={SmilesLogo} alt="Logo da Gol" />
+          <img src={pagolLogo} alt="Logo da Gol" />
+          <img src={alticeLabsLogo} alt="Logo da Gol" />
+          <img src={vivoLogo} alt="Logo da Gol" />
+          <img src={oiLogo} alt="Logo da Gol" />
+          <img src={fibrasilLogo} alt="Logo da Gol" />
+          <img src={presentLogo} alt="Logo da Gol" />
+          <img src={omniLogo} alt="Logo da Gol" />
+          <img src={appCargoLogo} alt="Logo da Gol" />
+          <img src={guararemaLogo} alt="Logo da Gol" />
+        </PartnersSection>
+      </PartnersContainer>
       <ProductsSection>
         <h1>Ficou interessado?</h1>
         <p>

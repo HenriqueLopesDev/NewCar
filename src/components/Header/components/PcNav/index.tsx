@@ -18,7 +18,7 @@ export function PcNav() {
           <NavLink to="/contatos">Contatos</NavLink>
         </IlList>
         <IlList>
-          <NavLink to="/">Parceiros</NavLink>
+          <a href="/#parceiros">Parceiros</a>
         </IlList>
       </UlList>
     </NavBar>
