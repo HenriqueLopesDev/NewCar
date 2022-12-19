@@ -8,8 +8,8 @@ import {
   HistoryDiv,
   HistorySection,
 } from './styles'
-import CompanyImg from '../../assets/CompanyImg.svg'
-import OfficeImg from '../../assets/OfficeImg.svg'
+import CompanyImg from '../../assets/CompanyImgjpg.jpg'
+import OfficeImg from '../../assets/OfficeImgjpg.jpg'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 import 'animate.css/animate.min.css'
 export function Sobrenos() {

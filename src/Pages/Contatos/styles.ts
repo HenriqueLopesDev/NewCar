@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import ContactsBackground from '../../assets/contactsbanner.svg'
+import ContactsBackground from '../../assets/contactsbannerjpg.jpg'
 
 export const MainContacts = styled.main``
 

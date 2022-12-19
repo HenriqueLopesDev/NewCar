@@ -1,6 +1,6 @@
 import { CaretDown } from 'phosphor-react'
 import styled from 'styled-components'
-import Banner from '../../assets/QuemsomosBanner.svg'
+import Banner from '../../assets/Quemsomosjpg.jpg'
 export const AboutUsMain = styled.main``
 
 export const AboutUsBannerSection = styled.section`

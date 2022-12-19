@@ -135,7 +135,6 @@ export const StyledCoin = styled.div`
 `
 
 export const CarouselSection = styled.section`
-  /* background-color: #0066ff; */
   background-image: url(${circles});
   padding: 3rem 15rem;
 
