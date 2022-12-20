@@ -22,9 +22,6 @@ export const Card = styled.section`
   }
 
   img {
-    /* max-width: 100%;
-    max-height: 100%; Continuar teste depois
-    object-fit: cover; */
     width: auto;
     height: auto;
     max-width: 160px;

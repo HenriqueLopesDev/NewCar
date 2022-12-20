@@ -12,6 +12,7 @@ import {
 } from './styles'
 
 export function Cars() {
+  document.title = 'NewGo | Carros'
   const { cars } = useContext(CarsContext)
 
   const [searchCar, setSearchCar] = useState('')
@@ -32,7 +33,7 @@ export function Cars() {
           placeholder="Digite aqui sua busca"
           value={searchCar}
         />
-        <StyledSearchIcon size={24} color="#272221" weight="bold" />
+        <StyledSearchIcon size={20} color="#272221" weight="bold" />
       </BannerPage>
       <PageContent>
         <Pagetitle>
