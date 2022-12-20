@@ -27,6 +27,7 @@ import presentLogo from '../../assets/presentLogo.svg'
 import omniLogo from '../../assets/omniLogo.svg'
 import appCargoLogo from '../../assets/appCargoLogo.svg'
 import guararemaLogo from '../../assets/guararemaLogo.svg'
+import { NavLink } from 'react-router-dom'
 
 export function Home() {
   console.log(window.innerWidth)
@@ -170,7 +171,9 @@ export function Home() {
           Acesse o catálogo e conheça nossas melhores opções para você e sua
           família
         </p>
-        <a href="">Clique aqui e veja todos os veículos disponíveis</a>
+        <NavLink to="/carros">
+          Clique aqui e veja todos os veículos disponíveis
+        </NavLink>
       </ProductsSection>
     </HomeContainer>
   )

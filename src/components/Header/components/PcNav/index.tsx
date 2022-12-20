@@ -9,7 +9,7 @@ export function PcNav() {
           <NavLink to="/">Home</NavLink>
         </IlList>
         <IlList>
-          <NavLink to="/">Carros</NavLink>
+          <NavLink to="/carros">Carros</NavLink>
         </IlList>
         <IlList>
           <NavLink to="/sobrenos">Quem somos</NavLink>

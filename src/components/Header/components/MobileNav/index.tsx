@@ -15,7 +15,7 @@ export function MobileNav() {
           <NavLink to="/">Home</NavLink>
         </MobileNavLi>
         <MobileNavLi>
-          <NavLink to="/">Carros</NavLink>
+          <NavLink to="/carros">Carros</NavLink>
         </MobileNavLi>
         <MobileNavLi>
           <NavLink to="/sobrenos">Quem somos</NavLink>
@@ -24,7 +24,7 @@ export function MobileNav() {
           <NavLink to="/contatos">Contatos</NavLink>
         </MobileNavLi>
         <MobileNavLi>
-          <NavLink to="/">Parceiros</NavLink>
+          <NavLink to="/#parceiros">Parceiros</NavLink>
         </MobileNavLi>
       </MobileUl>
     </MobileMenuContainer>
