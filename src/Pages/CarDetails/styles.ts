@@ -61,6 +61,15 @@ export const PageMainContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+`
+export const PageTitleContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+export const PageTitle = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 
   h1 {
     font-size: 1.5rem;
@@ -75,20 +84,39 @@ export const PageMainContent = styled.div`
   }
 `
 
-export const CarFinalValueContainer = styled.div`
+export const ResultSection = styled.section`
+  h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: right;
+  }
+
+  p {
+    margin: 0;
+    text-align: right;
+  }
+`
+
+export const CarCalcContainer = styled.div`
   margin-top: 2rem;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 0.5rem;
 `
 
 export const InputCalc = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.25rem;
+
+  label {
+    font-size: 1.125rem;
+  }
 
   input {
-    width: 100%;
-    padding: 0.25rem 0.5rem;
+    width: 15rem;
+    height: 2rem;
+    padding: 0rem 0.5rem;
     border-radius: 4px;
     outline: none;
     border: 2px solid ${(props) => props.theme['blue-200']};
@@ -97,5 +125,10 @@ export const InputCalc = styled.div`
   input:disabled {
     background-color: ${(props) => props.theme['white-100']};
     cursor: not-allowed;
+    font-size: 0.875rem;
+  }
+
+  input::placeholder {
+    font-size: 0.875rem;
   }
 `
