@@ -11,11 +11,34 @@ export const PageContainer = styled.div`
     max-width: 460px;
     right: 0;
   }
+
+  @media (max-width: 1390px) {
+    padding: 3rem 5rem;
+  }
+
+  @media (max-width: 930px) {
+    img {
+      max-width: 230px;
+    }
+  }
+
+  @media (max-width: 805px) {
+    padding: 3rem 2.5rem;
+  }
+
+  @media (max-width: 330px) {
+    padding: 3rem 1rem;
+  }
 `
 
 export const Apresentation = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 570px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `
 
 export const CarDetailsComponent = styled.div`
@@ -65,6 +88,11 @@ export const PageMainContent = styled.div`
 export const PageTitleContainer = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
 `
 export const PageTitle = styled.div`
   display: flex;
@@ -89,11 +117,19 @@ export const ResultSection = styled.section`
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     text-align: right;
+    margin: 0;
   }
 
   p {
     margin: 0;
     text-align: right;
+  }
+
+  @media (max-width: 750px) {
+    h3,
+    p {
+      text-align: left;
+    }
   }
 `
 
@@ -130,5 +166,9 @@ export const InputCalc = styled.div`
 
   input::placeholder {
     font-size: 0.875rem;
+  }
+
+  @media (max-width: 400px) {
+    align-items: center;
   }
 `

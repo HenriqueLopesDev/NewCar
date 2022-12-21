@@ -26,8 +26,11 @@ export function CarDetails() {
   const entrancevalueWatch = watch('entrancevalue')
   const taxWatch = watch('tax')
   const monthsAmountWatch = watch('monthsAmount')
+  let taxFiltered = 0
 
-  const taxFiltered = taxWatch.replace(',', '.')
+  if (taxWatch) {
+    taxFiltered = taxWatch.replace(',', '.')
+  }
 
   const financiamento =
     taxFiltered /
@@ -67,8 +70,7 @@ export function CarDetails() {
                     durante {monthsAmountWatch} meses, totalizando R${' '}
                     {(monthsAmountWatch * valorFinal)
                       .toFixed(2)
-                      .replace('.', ',')}{' '}
-                    financiado
+                      .replace('.', ',')}
                   </p>
                 </ResultSection>
               )}
