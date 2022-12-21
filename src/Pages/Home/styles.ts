@@ -192,6 +192,7 @@ export const PartnersContainer = styled.div`
   h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.75rem;
+    text-align: center;
   }
 
   hr {

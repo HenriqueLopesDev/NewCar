@@ -28,10 +28,11 @@ import omniLogo from '../../assets/omniLogo.svg'
 import appCargoLogo from '../../assets/appCargoLogo.svg'
 import guararemaLogo from '../../assets/guararemaLogo.svg'
 import { NavLink } from 'react-router-dom'
+import CarrosselImg1 from '../../assets/CarrosselImg1.jpg'
+import CarrosselImg2 from '../../assets/CarrosselImg2.jpg'
+import CarrosselImg3 from '../../assets/CarrosselImg3.jpg'
 
 export function Home() {
-  console.log(window.innerWidth)
-
   function ImgHeight() {
     if (window.innerWidth <= 530) {
       return 150
@@ -80,13 +81,16 @@ export function Home() {
               <img
                 height={ImgHeight()}
                 className="d-block w-100"
-                src="https://quatrorodas.abril.com.br/wp-content/uploads/2021/05/VW-Taos_11-e1622125254902.jpg?quality=70&strip=info"
-                alt="Image One"
+                src={CarrosselImg1}
+                alt="Carrossel com a imagem de um carro Volkswagen Taos 2022"
               />
               {window.innerWidth > 530 ? (
                 <Carousel.Caption>
                   <h3>Volkswagen Taos 2022</h3>
-                  <p>Teste</p>
+                  <p>
+                    De 0 a 100Km/h em 9.3 segundos. O Volkswagen Taos é nossa
+                    opção perfeita para você que gosta de qualidade e conforto
+                  </p>
                 </Carousel.Caption>
               ) : null}
             </Carousel.Item>
@@ -94,13 +98,17 @@ export function Home() {
               <img
                 height={ImgHeight()}
                 className="d-block w-100"
-                src="https://www.autoo.com.br/fotos/2022/4/1280_960/Hyundai1_13042022_71190_1280_960.jpg"
-                alt="Image Two"
+                src={CarrosselImg2}
+                alt="Carrossel com a imagem de um carro Chevrolet Onix 2021"
               />
               {window.innerWidth > 530 ? (
                 <Carousel.Caption>
-                  <h3>Teste</h3>
-                  <p>Teste</p>
+                  <h3>Chevrolet Onix 2021</h3>
+                  <p>
+                    Um dos mais famosos do Brasil, o Onix 2021 revolucinou a
+                    categoria de carros populares. Contando com câmbio
+                    automático de 6 marchas e interior extremamente moderno
+                  </p>
                 </Carousel.Caption>
               ) : null}
             </Carousel.Item>
@@ -108,13 +116,17 @@ export function Home() {
               <img
                 height={ImgHeight()}
                 className="d-block w-100"
-                src="https://www.autodashboard.com.br/wp-content/uploads/2019/09/honda-civic-2020.jpg"
-                alt="Image Two"
+                src={CarrosselImg3}
+                alt="Carrossel com a imagem de um carro Honda Civic 2020"
               />
               {window.innerWidth > 530 ? (
                 <Carousel.Caption>
                   <h3>Honda Civic 2020</h3>
-                  <p>Teste</p>
+                  <p>
+                    Para aqueles que buscam conforto e um automóvel extremamente
+                    moderno, o Honda Civic 2020 é uma opção para quem quer pagar
+                    menos e ter muita qualidade
+                  </p>
                 </Carousel.Caption>
               ) : null}
             </Carousel.Item>
